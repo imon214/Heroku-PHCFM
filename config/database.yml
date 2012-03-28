@@ -42,11 +42,18 @@ staging:
   username: root
   host:     localhost 
   
+# production:
+  # adapter: mysql2
+  # encoding: utf8
+  # database: phcfm
+  # username: root
+  # password:
+  # host: localhost
+
 production:
-  adapter: mysql2
-  encoding: utf8
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
   database: phcfm
   username: root
   password:
-  host: localhost
-

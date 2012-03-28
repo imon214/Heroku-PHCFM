@@ -22,6 +22,7 @@ gem 'rvm', '~> 1.2.6'
 
 group :development do
   #gem 'mysql'
+  #gem 'therubyracer-heroku', '0.8.1.pre3'
   gem 'pg', '~> 0.13.2'
   
   # Deploy with Capistrano
@@ -30,8 +31,8 @@ group :development do
 end
 
 group :production, :staging do
-  gem 'mysql2'#, '~> 0.2.7', :platform => :ruby # special version only necessary for Rails 3.0.x
-
+  #gem 'mysql2'#, '~> 0.2.7', :platform => :ruby # special version only necessary for Rails 3.0.x
+  gem 'pg', '~> 0.13.2'
     # Crontab entries
   gem 'whenever', :require => false
 end
