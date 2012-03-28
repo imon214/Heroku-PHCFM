@@ -21,7 +21,8 @@ gem 'rake-compiler', '~> 0.7.1'
 gem 'rvm', '~> 1.2.6'
 
 group :development do
-  gem 'mysql'
+  #gem 'mysql'
+  gem 'pg', '~> 0.13.2'
   
   # Deploy with Capistrano
   gem 'capistrano'
